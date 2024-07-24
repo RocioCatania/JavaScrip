@@ -863,3 +863,177 @@
 //     }
 // }
 
+
+// 43. Usar un bucle `do...while` para pedir al usuario una letra y usar `switch` para determinar si es vocal o consonante.
+
+
+// let letra;
+
+// do {
+//     letra=prompt("ingrese otra letra").toUpperCase();
+//     if (letra!= "A" && letra!= "E" && letra!= "I" && letra!= "O" && letra!= "U" ) {
+//         alert("Ingresaste una consonante");
+//     }
+// switch (letra) {
+//     case "A":
+//     alert("INGRESASTE UNA VOCAL");
+//     break;
+//     case"E":
+//     alert("INGRESASTE UNA VOCAL");
+//     break;
+//     case "I": 
+//     alert("INGRESASTE UNA VOCAL");
+//     break;
+//     case "O":
+//     alert("INGRESASTE UNA VOCAL");
+//     break;
+//     case "U":
+//     alert("INGRESASTE UNA VOCAL");
+//     break;
+// //     default:
+//     // alert("Ud no ingreso nunguna letra, vuelva a intentarlo");
+// }
+// }while (true)
+
+
+// !!!!!!!!!!44. Crear un bucle `for` que imprima los números del 1 al 20 y use `switch` para imprimir un mensaje si el número es divisible por 4.
+
+// for(i=0;i<20;i++) {
+
+//     switch(i%4) {
+//         case "0":
+//             console.log("este numero es divisible por cuatro");
+//         default: 
+//         console.log("este numero NO es divisible por cuatro");
+//     }
+// }
+
+
+
+// 45. Crear un bucle `while` que pida al usuario una calificación (A, B, C, D, F) y use `switch` para imprimir un mensaje adecuado.
+
+
+// let calificacion= prompt("Ingrese una calificacion tal como: A,B,C,D,F").toUpperCase();
+
+// while (true) {
+//     if (calificacion=="A") {
+//         alert("Ingresaste la calificacion: "+calificacion);
+//         break;
+//     }
+//     if (calificacion=="B") {
+//         alert("Ingresaste la calificacion: "+calificacion);
+//         break;
+//     }
+//     if (calificacion=="C") {
+//         alert("Ingresaste la calificacion: "+calificacion);
+//         break;
+//     }
+//     if (calificacion=="D") {
+//         alert("Ingresaste la calificacion: "+calificacion);
+//         break;
+//     }
+//     if (calificacion=="F") {
+//         alert("Ingresaste la calificacion: "+calificacion);
+//         break;
+//     }else {
+//         alert("Ud no ha ingresado una calificacion valida, por favor vuelva a intentarlo");
+//         break;
+//     }
+// }
+
+// 46. Crear un bucle `for` que imprima los números del 1 al 100, pero use `continue` para saltar los números múltiplos de 10.
+//  for(i=0; i<=100;i++) {
+//     if (i%10==0) {
+//         continue
+//     }else {
+//         console.log(i)
+//     }
+//  }
+
+// 47. Crear un bucle `while` que pida al usuario números y termine si introduce un número primo.
+
+
+// let numero=parseFloat(prompt("ingrese un numero"));
+
+// while (true) {
+//     if (numero%1==0 && numero%numero==0) {
+//         alert(numero+" es primo");
+//         break;
+//     }
+//     else if (numero%1==0 && numero%numero==0 && (numero%2==0 || numero%3==0 || numero%5)) {
+//         alert(numero+" no es primo");
+//         break;
+//     }
+// }
+
+// resolucion del profe (no uso while):
+
+
+// let numeroIngresado = parseInt(prompt(“Ingrese un número”));
+
+// let esPrimo = true;
+
+// if (numeroIngresado > 1) {
+
+// for (let i = 2; i < numeroIngresado; i++) {
+
+// if (numeroIngresado % i === 0) {
+
+// esPrimo = false;
+
+// break;
+
+// }
+
+// }
+
+// if (esPrimo) {
+
+// console.log(“El número: ” + numeroIngresado + “ es Primo”);
+
+// } else {
+
+// console.log(“El número: ” + numeroIngresado + “ No es Primo”);
+
+// }
+
+// } else {
+
+// console.log(“El número: ” + numeroIngresado + “ No es Primo”);
+
+// }
+
+// 48. Crear un bucle `do...while` que pida al usuario su edad y use `switch` para imprimir un mensaje según la década.
+
+
+// let edad = parseInt(prompt("Ingrese su edad"));
+
+// do {
+//     decada=2024-edad;
+//     if (decada >= 2000){
+
+//         alert("Ud Nacio en: "+decada+" Felicidades ud es Milenial, maldito desgraciado!");
+//     break;
+//     }
+
+// else if (decada >=1990 && decada< 2000) {
+//     alert("Ud Nacio en: "+decada+" No te preocupes,aun sos muy joven");
+//     break;
+// }
+// else if (decada >=1980 && decada< 1990) {
+//     alert("Ud Nacio en: "+decada+" Estas en la mediana edad");
+//     break;
+// }
+// else if (decada >=1970 && decada< 1980) {
+//     alert("Ud Nacio en: "+decada+" Quisiera tus consejos");
+//     break;
+// }
+// else if (decada >=1960 && decada< 1970) {
+//     alert("Ud Nacio en: "+decada+" Ya tenes canas?");
+//     break;
+// }
+// else if (decada >=1950 && decada< 1960) {
+//     alert("Ud Nacio en: "+decada+" Te voy preparando la ceremonia...perdon");
+//     break;
+// }
+// } while(true)
